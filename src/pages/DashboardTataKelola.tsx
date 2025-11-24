@@ -19,19 +19,19 @@ const DashboardTataKelola: React.FC = () => {
 
           <Row gutter={[16, 16]}>
             <Col xs={24} sm={12} md={8}>
-              <Card style={{ textAlign: 'center', background: '#f0f2f5' }}>
+              <Card style={{ textAlign: 'center', _background: '#f0f2f5' }}>
                 <Title level={4}>KPI Tata Kelola</Title>
                 <Paragraph>Coming Soon</Paragraph>
               </Card>
             </Col>
             <Col xs={24} sm={12} md={8}>
-              <Card style={{ textAlign: 'center', background: '#f0f2f5' }}>
+              <Card style={{ textAlign: 'center', _background: '#f0f2f5' }}>
                 <Title level={4}>Compliance Status</Title>
                 <Paragraph>Coming Soon</Paragraph>
               </Card>
             </Col>
             <Col xs={24} sm={12} md={8}>
-              <Card style={{ textAlign: 'center', background: '#f0f2f5' }}>
+              <Card style={{ textAlign: 'center', _background: '#f0f2f5' }}>
                 <Title level={4}>Governance Score</Title>
                 <Paragraph>Coming Soon</Paragraph>
               </Card>

@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # Application for development
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: dashboard-budayarisiko-dev
+    environment:
+      # Database Configuration
+      - DB_USER=${DB_USER:-sa}
+      - DB_PASSWORD=${DB_PASSWORD:-YourStrong@Passw0rd}
+      - DB_SERVER=mssql
+      - DB_NAME=${DB_NAME:-budaya_risiko}
+      - DB_SCHEMA=${DB_SCHEMA:-dbo}
+      - DB_PORT=1433
+      
+      # API Configuration
+      - PORT=3001
+      - NODE_ENV=development
+      - VITE_API_URL=http://localhost:3001/api
+      
+      # External API Configuration
+      - EXTERNAL_API_BASE_URL=${EXTERNAL_API_BASE_URL}
+      - EXTERNAL_API_USERNAME=${EXTERNAL_API_USERNAME}
+      - EXTERNAL_API_PASSWORD=${EXTERNAL_API_PASSWORD}
+      - VITE_EXTERNAL_API_BASE_URL=${VITE_EXTERNAL_API_BASE_URL}
+      - VITE_EXTERNAL_API_USERNAME=${VITE_EXTERNAL_API_USERNAME}
+      - VITE_EXTERNAL_API_PASSWORD=${VITE_EXTERNAL_API_PASSWORD}
+    ports:
+      - "${PORT:-3001}:3001"
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      mssql:
+        condition: service_healthy
+    networks:
+      - dashboard-network
+    command: npm run dev:all
+
+  # MSSQL Database
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: dashboard-budayarisiko-db-dev
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${DB_PASSWORD:-YourStrong@Passw0rd}
+      - MSSQL_PID=Developer
+    ports:
+      - "${DB_PORT:-1433}:1433"
+    volumes:
+      - mssql_dev_data:/var/opt/mssql
+    networks:
+      - dashboard-network
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${DB_PASSWORD:-YourStrong@Passw0rd} -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  mssql_dev_data:
+    driver: local
+
+networks:
+  dashboard-network:
+    driver: bridge

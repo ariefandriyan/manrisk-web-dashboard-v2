@@ -36,4 +36,4 @@ verify-*.js
 database
 
 .env
-.index.ts.backup
+server/index.ts.backup

@@ -1,0 +1,41 @@
+/* Dark mode input styling */
+.login-dark-input input {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+  border: 2px solid #2a2a2a !important;
+}
+
+.login-dark-input input::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.login-dark-input input:focus {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.login-dark-input .ant-input-prefix {
+  color: #006cb8 !important;
+}
+
+.login-dark-input .ant-input-suffix {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Password input dark mode */
+.login-dark-input .ant-input-password input {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.login-dark-input .ant-input-password {
+  background: #1a1a1a !important;
+}
+
+.login-dark-input .ant-input-password-icon {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.login-dark-input .ant-input-password-icon:hover {
+  color: #006cb8 !important;
+}

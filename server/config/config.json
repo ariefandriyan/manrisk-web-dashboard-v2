@@ -1,0 +1,37 @@
+{
+  "development": {
+    "username": "your_username",
+    "password": "your_password",
+    "database": "your_database",
+    "host": "localhost",
+    "port": 1433,
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "encrypt": true,
+        "trustServerCertificate": true
+      }
+    }
+  },
+  "test": {
+    "username": "your_username",
+    "password": "your_password",
+    "database": "your_database_test",
+    "host": "localhost",
+    "port": 1433,
+    "dialect": "mssql"
+  },
+  "production": {
+    "username": "your_username",
+    "password": "your_password",
+    "database": "your_database",
+    "host": "localhost",
+    "port": 1433,
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+        "encrypt": true
+      }
+    }
+  }
+}

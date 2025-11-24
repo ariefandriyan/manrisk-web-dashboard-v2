@@ -1,0 +1,137 @@
+.dashboard-kapabilitas-risiko {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+}
+
+/* Dark mode support */
+[data-theme='dark'] .dashboard-kapabilitas-risiko {
+  background: #141414;
+}
+
+.dashboard-header {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode header */
+[data-theme='dark'] .dashboard-header {
+  background: #1f1f1f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header-content {
+  flex: 1;
+}
+
+.dashboard-card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode card hover */
+[data-theme='dark'] .dashboard-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode for ant design cards */
+[data-theme='dark'] .dashboard-card .ant-card {
+  background: #1f1f1f;
+  border-color: #303030;
+}
+
+[data-theme='dark'] .dashboard-card .ant-card-head {
+  border-bottom-color: #303030;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .dashboard-card .ant-card-body {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Dark mode for statistics */
+[data-theme='dark'] .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+[data-theme='dark'] .ant-statistic-content {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Dark mode for tables */
+[data-theme='dark'] .ant-table {
+  background: #1f1f1f;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .ant-table-thead > tr > th {
+  background: #262626;
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom-color: #303030;
+}
+
+[data-theme='dark'] .ant-table-tbody > tr > td {
+  border-bottom-color: #303030;
+}
+
+[data-theme='dark'] .ant-table-tbody > tr:hover > td {
+  background: #262626;
+}
+
+/* Dark mode for charts */
+[data-theme='dark'] .recharts-text {
+  fill: rgba(255, 255, 255, 0.65);
+}
+
+[data-theme='dark'] .recharts-cartesian-grid line {
+  stroke: #303030;
+}
+
+[data-theme='dark'] .recharts-legend-item-text {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Fullscreen mode styling */
+:fullscreen .dashboard-kapabilitas-risiko {
+  padding: 12px;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+:-webkit-full-screen .dashboard-kapabilitas-risiko {
+  padding: 12px;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+:-moz-full-screen .dashboard-kapabilitas-risiko {
+  padding: 12px;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dashboard-header-content {
+    text-align: center;
+  }
+  
+  .dashboard-kapabilitas-risiko {
+    padding: 12px;
+  }
+}
+

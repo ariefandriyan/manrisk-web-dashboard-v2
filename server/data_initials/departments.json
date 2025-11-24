@@ -1,0 +1,194 @@
+[
+    {
+        "departmentID": "100",
+        "deskripsi": "Direktorat Utama",
+        "induk": null,
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "200",
+        "deskripsi": "Direktorat Operasi dan Komersial",
+        "induk": null,
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "300",
+        "deskripsi": "Direktorat Keuangan dan Dukungan Bisnis",
+        "induk": null,
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "400",
+        "deskripsi": "Direktorat Manajemen Risiko",
+        "induk": null,
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "101",
+        "deskripsi": "Satuan Pengawas Internal",
+        "induk": "100",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "103",
+        "deskripsi": "Sekretaris Perusahaan",
+        "induk": "100",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "104",
+        "deskripsi": "Departemen Hukum",
+        "induk": "100",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "105",
+        "deskripsi": "Departemen HSSE",
+        "induk": "100",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "210",
+        "deskripsi": "Divisi Komersial dan Pengembangan Bisnis",
+        "induk": "200",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "220",
+        "deskripsi": "Divisi Operasi",
+        "induk": "200",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "230",
+        "deskripsi": "Divisi Reliability & Quality",
+        "induk": "200",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "211",
+        "deskripsi": "Departemen Komersial LNG&Gas",
+        "induk": "210",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "212",
+        "deskripsi": "Departemen Perencanaan dan Pengembangan Bisnis",
+        "induk": "210",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "221",
+        "deskripsi": "Departemen Transportasi LNG & Operasional FSRU",
+        "induk": "220",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "222",
+        "deskripsi": "Departemen Distribusi Gas & Pengelolaan ORF",
+        "induk": "220",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "231",
+        "deskripsi": "Departemen Reliability",
+        "induk": "230",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "232",
+        "deskripsi": "Departemen Quality Management & Quality Assurance",
+        "induk": "230",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "310",
+        "deskripsi": "Divisi Keuangan dan Sistem Informasi",
+        "induk": "300",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "320",
+        "deskripsi": "Divisi SDM dan Umum",
+        "induk": "300",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "311",
+        "deskripsi": "Departemen Controller",
+        "induk": "310",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "312",
+        "deskripsi": "Departemen Perbendaharaan",
+        "induk": "310",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "313",
+        "deskripsi": "Departemen IT & GA",
+        "induk": "320",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "321",
+        "deskripsi": "Departemen SDM",
+        "induk": "320",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "322",
+        "deskripsi": "Departemen Procurement",
+        "induk": "320",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "323",
+        "deskripsi": "Departemen Layanan Umum",
+        "induk": "320",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "410",
+        "deskripsi": "Divisi Risk Strategy Governance",
+        "induk": "400",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "420",
+        "deskripsi": "Divisi Risk Implementation",
+        "induk": "400",
+        "isDepartment": "N"
+    },
+    {
+        "departmentID": "411",
+        "deskripsi": "Departemen Risk Policy, Planning & Infrastructure",
+        "induk": "410",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "412",
+        "deskripsi": "Departemen Integrated Governance & Business Alignment",
+        "induk": "410",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "421",
+        "deskripsi": "Departemen Operational Risk",
+        "induk": "420",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "422",
+        "deskripsi": "Departemen Project Risk & Corporate Action",
+        "induk": "420",
+        "isDepartment": "Y"
+    },
+    {
+        "departmentID": "423",
+        "deskripsi": "Departemen Portofolio & Couterparty Risk",
+        "induk": "420",
+        "isDepartment": "Y"
+    }
+]

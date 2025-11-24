@@ -1,0 +1,134 @@
+.logo {
+  height: auto;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  /* background and border controlled by inline style for theme switching */
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo h2 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Sidebar smooth transitions */
+.ant-layout-sider {
+  transition: all 0.2s ease-in-out !important;
+}
+
+.ant-layout-sider-collapsed {
+  transition: all 0.2s ease-in-out !important;
+}
+
+/* Ensure proper spacing and layout */
+/* .ant-layout background controlled by inline style for theme switching */
+
+.ant-layout-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fix any potential text overlap */
+* {
+  box-sizing: border-box;
+}
+
+/* Header styling - background controlled by inline style for theme switching */
+.ant-layout-header {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 24px !important;
+  height: 64px !important;
+  line-height: 64px !important;
+  /* background and border controlled by inline style */
+}
+
+.ant-layout-header h1 {
+  margin: 0 !important;
+  line-height: 64px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--ptmn-black);
+}
+
+/* User menu styling */
+.ant-dropdown-trigger {
+  cursor: pointer;
+}
+
+.ant-avatar {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ant-avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure cards have proper spacing */
+.ant-card {
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.ant-card-body {
+  padding: 24px;
+}
+
+/* Responsive improvements */
+@media (max-width: 992px) {
+  .ant-layout {
+    margin-left: 0 !important;
+  }
+  
+  .ant-layout-header h1 {
+    font-size: 18px !important;
+  }
+  
+  .ant-layout-header {
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-layout-header h1 {
+    font-size: 16px !important;
+    max-width: 200px;
+  }
+  
+  .logo h2 {
+    font-size: 14px;
+  }
+  
+  .ant-layout-header {
+    padding: 0 12px !important;
+    gap: 8px;
+  }
+  
+  .ant-layout-header > div:last-child {
+    gap: 8px !important;
+  }
+  
+  .ant-layout-header > div:last-child > div {
+    display: none; /* Hide email on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-layout-header h1 {
+    font-size: 14px !important;
+    max-width: 150px;
+  }
+}
